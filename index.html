@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英文單字測驗</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>英文單字測驗</h1>
+        <div id="quiz-container">
+            <div id="progress" class="progress">第 1 題 / 共 10 題</div>
+            <div id="timer" class="timer">剩餘時間：15秒</div>
+            <div id="word-container">
+                <span id="current-word" class="word"></span>
+                <button id="speak-btn" class="speak-btn">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+            </div>
+            <div id="feedback"></div>
+            <div id="options-container">
+                <!-- 選項會由 JavaScript 動態載入 -->
+            </div>
+        </div>
+        <div id="controls">
+            <button id="start-btn">開始測驗</button>
+            <button id="next-btn" style="display: none;">下一題</button>
+        </div>
+        <div id="result" style="display: none;">
+            <!-- 結果會由 JavaScript 動態載入 -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
